@@ -11,10 +11,13 @@ int main(void)
     char name[20];
     float weight;
     printf("请输入你的名字:\n");
+    fflush(stdin);
     scanf("%s", name);
     printf("请输入你的身高（厘米）:\n");
+    fflush(stdin);
     scanf("%f", &weight);
     printf("%s，你的身高为：%0.2f 米", name, weight / 100);
+    fflush(stdin);
     getchar();
 
     return 0;
